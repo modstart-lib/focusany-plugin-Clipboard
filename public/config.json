@@ -1,0 +1,95 @@
+{
+    "$schema": "https://focusany.com/sdk/config.schema.json",
+    "name": "Clipboard",
+    "version": "1.1.0",
+    "title": "剪切板",
+    "description": "提供剪切板管理功能",
+    "author": "FocusAny",
+    "homepage": "https://focusany.com",
+    "preload": "preload.cjs",
+    "logo": "logo.svg",
+    "main": "index.html",
+    "setting": {
+        "preloadBase": "<system>",
+        "autoDetach": true,
+        "detachPosition": "right-bottom",
+        "detachAlwaysOnTop": true,
+        "width": "350",
+        "height": "500"
+    },
+    "permissions": [
+        "ClipboardManage"
+    ],
+    "actions": [
+        {
+            "name": "default",
+            "type": "web",
+            "matches": [
+                "clipboard",
+                "剪切板"
+            ]
+        },
+        {
+            "name": "paste-1",
+            "type": "code",
+            "trackHistory": false,
+            "matches": [
+                {
+                    "type": "key",
+                    "key": "clipboard-paste-1"
+                }
+            ]
+        },
+        {
+            "name": "paste-2",
+            "type": "code",
+            "trackHistory": false,
+            "matches": [
+                {
+                    "type": "key",
+                    "key": "clipboard-paste-2"
+                }
+            ]
+        },
+        {
+            "name": "paste-3",
+            "type": "code",
+            "trackHistory": false,
+            "matches": [
+                {
+                    "type": "key",
+                    "key": "clipboard-paste-3"
+                }
+            ]
+        },
+        {
+            "name": "paste-4",
+            "type": "code",
+            "trackHistory": false,
+            "matches": [
+                {
+                    "type": "key",
+                    "key": "clipboard-paste-4"
+                }
+            ]
+        },
+        {
+            "name": "paste-5",
+            "type": "code",
+            "trackHistory": false,
+            "matches": [
+                {
+                    "type": "key",
+                    "key": "clipboard-paste-5"
+                }
+            ]
+        }
+    ],
+    "development": {
+        "env": "dev",
+        "main": "http://localhost:5173",
+        "releaseDoc": "../release.md",
+        "contentDoc": "../content.md",
+        "previewDoc": "../preview.md"
+    }
+}
