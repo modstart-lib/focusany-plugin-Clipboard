@@ -13,9 +13,7 @@ const pasteHistory = async (index) => {
     } else {
         texts.push(`[剪切板]${record.type}`)
     }
-    setTimeout(() => {
-        focusany.simulate.typeString(texts.join(''));
-    }, 0);
+    focusany.simulate.typeString(texts.join(''));
 }
 
 window.focusanyApi = {

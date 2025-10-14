@@ -1,7 +1,7 @@
 {
     "$schema": "https://focusany.com/sdk/config.schema.json",
     "name": "Clipboard",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "title": "剪切板",
     "description": "提供剪切板管理功能",
     "author": "FocusAny",
