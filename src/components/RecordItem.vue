@@ -72,7 +72,7 @@ const emit = defineEmits([
             </div>
         </div>
         <div class="px-2 pb-2">
-            <div v-if="item.type==='text'" class="whitespace-break-spaces break-all">
+            <div v-if="item.type==='text'" class="whitespace-break-spaces break-all max-h-32 overflow-auto">
                 {{ item.text }}
             </div>
             <div v-if="item.type==='image'">
